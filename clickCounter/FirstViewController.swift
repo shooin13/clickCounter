@@ -19,7 +19,6 @@ class FirstViewController: UIViewController {
   
   @IBOutlet weak var minusButton: UIButton!
   @IBOutlet weak var plusButton: UIButton!
-  @IBOutlet weak var clickButton: UIButton!
   
   @IBOutlet weak var logTextView: UITextView!
   
@@ -54,10 +53,6 @@ class FirstViewController: UIViewController {
     clickCountLabel.text = "Значение счетчика: \(clicks)"
     logTextView.text += "\n\(date) Значение сброшено"
     logTextView.flashScrollIndicators()
-  }
-  
-  @IBAction func updateClickCount() {
-    increaseCounter()
   }
   
   @IBAction func plusCount() {
