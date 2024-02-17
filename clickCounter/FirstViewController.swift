@@ -10,7 +10,11 @@ import UIKit
 class FirstViewController: UIViewController {
   
   private var clicks = 0
-  private var date = String("[\(Date().formatted())]")
+  private var date: String {
+    get {
+      String("[\(Date().formatted())]")
+    }
+  }
   
   
   @IBOutlet weak var clickCountLabel: UILabel!
