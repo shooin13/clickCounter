@@ -55,24 +55,20 @@ class FirstViewController: UIViewController {
   }
   
   @IBAction func updateClickCount() {
-    print("button pressed")
     increaseCounter()
   }
   
   @IBAction func plusCount() {
-    print("plus pressed")
     increaseCounter()
   }
   
   
   @IBAction func minusCount() {
-    print("minus pressed")
     decreaseCounter()
   }
   
   
   @IBAction func resetCount() {
-    print("reset pressed")
     resetCounter()
   }
   
