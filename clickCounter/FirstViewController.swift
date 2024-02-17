@@ -11,9 +11,7 @@ class FirstViewController: UIViewController {
   
   private var clicks = 0
   private var date: String {
-    get {
-      String("[\(Date().formatted())]")
-    }
+    String("[\(Date().formatted())]")
   }
   
   
