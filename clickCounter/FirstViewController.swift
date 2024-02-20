@@ -17,10 +17,10 @@ class FirstViewController: UIViewController {
   
   @IBOutlet weak var clickCountLabel: UILabel!
   
-  @IBOutlet weak var minusButton: UIButton!
-  @IBOutlet weak var plusButton: UIButton!
+  @IBOutlet private weak var minusButton: UIButton!
+  @IBOutlet private weak var plusButton: UIButton!
   
-  @IBOutlet weak var logTextView: UITextView!
+  @IBOutlet private weak var logTextView: UITextView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -55,17 +55,17 @@ class FirstViewController: UIViewController {
     logTextView.flashScrollIndicators()
   }
   
-  @IBAction func plusCount() {
+  @IBAction private func plusCount() {
     increaseCounter()
   }
   
   
-  @IBAction func minusCount() {
+  @IBAction private func minusCount() {
     decreaseCounter()
   }
   
   
-  @IBAction func resetCount() {
+  @IBAction private func resetCount() {
     resetCounter()
   }
   

@@ -64,17 +64,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oih-by-GCL" firstAttribute="top" secondItem="nmt-0K-wve" secondAttribute="bottom" constant="30" id="0co-Hd-UZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oih-by-GCL" secondAttribute="trailing" constant="30" id="6qs-YZ-JSt"/>
                             <constraint firstItem="nmt-0K-wve" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BGA-RK-HYV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K2M-Q4-cmD" secondAttribute="trailing" constant="30" id="LD1-G6-w5J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PNz-if-iAr" secondAttribute="bottom" constant="10" id="Ni8-sk-VYh"/>
                             <constraint firstItem="PNz-if-iAr" firstAttribute="top" secondItem="K2M-Q4-cmD" secondAttribute="bottom" constant="20" id="S2T-mX-TRG"/>
-                            <constraint firstItem="Ha7-bB-HhB" firstAttribute="top" secondItem="oih-by-GCL" secondAttribute="bottom" constant="30" id="YRb-4q-DuV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nmt-0K-wve" secondAttribute="trailing" constant="30" id="Yfo-An-Ruv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PNz-if-iAr" secondAttribute="trailing" constant="30" id="YtN-Y9-u7j"/>
                             <constraint firstItem="nmt-0K-wve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="aVN-Kl-38a"/>
-                            <constraint firstItem="PNz-if-iAr" firstAttribute="top" secondItem="Ha7-bB-HhB" secondAttribute="bottom" constant="20" id="ask-7z-zYq"/>
                             <constraint firstItem="oih-by-GCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dbO-kX-rL6"/>
                             <constraint firstItem="oih-by-GCL" firstAttribute="top" secondItem="nmt-0K-wve" secondAttribute="bottom" constant="30" id="f8P-Q4-fWh"/>
                             <constraint firstItem="Ha7-bB-HhB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="fAj-by-3qG"/>
