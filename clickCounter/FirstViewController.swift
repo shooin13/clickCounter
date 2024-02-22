@@ -7,27 +7,31 @@
 
 import UIKit
 import Lottie
+import AVFoundation
 
 class FirstViewController: UIViewController {
   @IBOutlet private var animationView: LottieAnimationView!
   
-//  private var animationView: LottieAnimationView?
-    
+  @IBOutlet private weak var clickCountLabel: UILabel!
+  @IBOutlet private weak var minusButton: UIButton!
+  @IBOutlet private weak var plusButton: UIButton!
+  @IBOutlet private weak var logTextView: UITextView!
+  @IBAction private func plusCount() {
+    increaseCounter()
+  }
+  @IBAction private func minusCount() {
+    decreaseCounter()
+  }
+  @IBAction private func resetCount() {
+    resetCounter()
+  }
+
   private var clicks = 0
   private var date: String {
     String("[\(Date().formatted())]")
   }
-  
-  
-  @IBOutlet private weak var clickCountLabel: UILabel!
-  
-  @IBOutlet private weak var minusButton: UIButton!
-  @IBOutlet private weak var plusButton: UIButton!
-  
-  @IBOutlet private weak var logTextView: UITextView!
-  
-  
-  
+  private var player: AVAudioPlayer!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     clickCountLabel.text = "Значение счетчика: \(clicks)"
@@ -35,7 +39,6 @@ class FirstViewController: UIViewController {
     setupAnimationView()
     
   }
-  
   
   private func increaseCounter() {
     clicks += 1
@@ -51,6 +54,7 @@ class FirstViewController: UIViewController {
       logTextView.text += "\n\(date) Значение изменено на -1"
     } else {
       logTextView.text += "\n\(date) Попытка уменьшить значение счетчика ниже 0"
+      playSound()
     }
     
     logTextView.flashScrollIndicators()
@@ -62,34 +66,20 @@ class FirstViewController: UIViewController {
     logTextView.text += "\n\(date) Значение сброшено"
     logTextView.flashScrollIndicators()
   }
-  
-  @IBAction private func plusCount() {
-    increaseCounter()
-  }
-  
-  
-  @IBAction private func minusCount() {
-    decreaseCounter()
-  }
-  
-  
-  @IBAction private func resetCount() {
-    resetCounter()
-  }
-  
+
   private func setupAnimationView() {
-//    animationView = .init(name: "Animation - 1708564556369")
     animationView!.frame = animationView.frame
-//    // 3. Set animation content mode
     animationView!.contentMode = .scaleAspectFit
-//    // 4. Set animation loop mode
     animationView!.loopMode = .loop
-//    // 5. Adjust animation speed
-//    animationView!.animationSpeed = 1
     view.addSubview(animationView!)
-//    // 6. Play animation
     animationView!.play()
     
+  }
+  
+  private func playSound() {
+    let url = Bundle.main.url(forResource: "11871-rick-rol", withExtension: "mp3")
+    player = try! AVAudioPlayer(contentsOf: url!)
+    player?.play()
   }
   
   
