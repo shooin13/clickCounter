@@ -10,7 +10,7 @@ import Lottie
 import AVFoundation
 
 class FirstViewController: UIViewController {
-  @IBOutlet private var animationView: LottieAnimationView!
+  @IBOutlet private weak var animationView: LottieAnimationView!
   
   @IBOutlet private weak var clickCountLabel: UILabel!
   @IBOutlet private weak var minusButton: UIButton!
