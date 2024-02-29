@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика: 42" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmt-0K-wve">
-                                <rect key="frame" x="30" y="69" width="265" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика: 42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmt-0K-wve">
+                                <rect key="frame" x="30" y="69" width="333" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,16 +60,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Nh-ErB" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="325" y="59" width="38" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="FIG-rA-aoE"/>
-                                    <constraint firstAttribute="height" constant="38" id="woA-Yw-qlv"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="Animation - 1708564556369"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -79,21 +69,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K2M-Q4-cmD" secondAttribute="trailing" constant="30" id="LD1-G6-w5J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PNz-if-iAr" secondAttribute="bottom" constant="10" id="Ni8-sk-VYh"/>
                             <constraint firstItem="PNz-if-iAr" firstAttribute="top" secondItem="K2M-Q4-cmD" secondAttribute="bottom" constant="20" id="S2T-mX-TRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nmt-0K-wve" secondAttribute="trailing" constant="30" id="Yfo-An-Ruv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PNz-if-iAr" secondAttribute="trailing" constant="30" id="YtN-Y9-u7j"/>
                             <constraint firstItem="nmt-0K-wve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="aVN-Kl-38a"/>
-                            <constraint firstItem="TC1-Nh-ErB" firstAttribute="leading" secondItem="nmt-0K-wve" secondAttribute="trailing" constant="30" id="bnv-EV-gds"/>
                             <constraint firstItem="oih-by-GCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dbO-kX-rL6"/>
                             <constraint firstItem="oih-by-GCL" firstAttribute="top" secondItem="nmt-0K-wve" secondAttribute="bottom" constant="30" id="f8P-Q4-fWh"/>
                             <constraint firstItem="Ha7-bB-HhB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="fAj-by-3qG"/>
-                            <constraint firstItem="TC1-Nh-ErB" firstAttribute="trailing" secondItem="oih-by-GCL" secondAttribute="trailing" id="kZv-js-LGC"/>
                             <constraint firstItem="Ha7-bB-HhB" firstAttribute="top" secondItem="oih-by-GCL" secondAttribute="bottom" constant="30" id="lbP-v5-Pub"/>
                             <constraint firstItem="PNz-if-iAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nIs-ln-qLg"/>
-                            <constraint firstItem="TC1-Nh-ErB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tAt-jh-eLH"/>
                             <constraint firstItem="PNz-if-iAr" firstAttribute="top" secondItem="Ha7-bB-HhB" secondAttribute="bottom" constant="20" id="wxp-Uz-cxR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationView" destination="TC1-Nh-ErB" id="DCW-36-5ZB"/>
                         <outlet property="clickCountLabel" destination="nmt-0K-wve" id="IO7-8f-Z4Z"/>
                         <outlet property="logTextView" destination="oih-by-GCL" id="1cI-Gl-VRA"/>
                         <outlet property="minusButton" destination="Ha7-bB-HhB" id="bfu-BP-omJ"/>
